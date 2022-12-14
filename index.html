@@ -3,19 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Sunnyside agency landing page</title>
-
+  <link rel="stylesheet" href="assets/css/style.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  About
+  <section class="section-header-hero-top">
+    <header class="header-nav-top">
+      <nav class="header-top-nav container">
+        <div class="logo">
+          <img src="images/logo.svg" alt="logo">
+        </div>
+        <div class="header-menu">
+          <ul class="list-items">
+            <li class="item-list"><a href="#about" class="link-item">about</a></li>
+            <li class="item-list"><a href="#services" class="link-item">Services</a></li>
+            <li class="item-list"><a href="#proyects" class="link-item">proyects</a></li>
+            <li class="item-list"><a href="#contact" class="link-item active">Contact</a></li>
+          </ul>
+        </div>
+        <div class="btn-menu-mobile">
+          <img src="images/icon-hamburger.svg" alt="logo" id="icon-menu">
+        </div>
+      </nav>
+    </header>
+  </section>
+    <!--- 
+    About
   Services
   Projects
   Contact
@@ -59,10 +74,7 @@
   Services
   Projects
   Contact
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    -->
+  <script src="assets/js/app.js"></script>
 </body>
 </html>
