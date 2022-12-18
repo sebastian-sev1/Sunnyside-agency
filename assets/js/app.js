@@ -1,7 +1,8 @@
-const toggleMenu = document.getElementById("icon-menu");
-let headerMenu = document.querySelector(".header-menu");
+const iconMenu = document.getElementById("icon-menu");
+let menu = document.querySelector(".header-menu");
 
-function showMenu(){
-    headerMenu.classList.toggle("active");
+function menuToggle(){
+    menu.classList.toggle("active")
 }
-toggleMenu.addEventListener("click",showMenu)
+
+iconMenu.addEventListener("click",menuToggle);
