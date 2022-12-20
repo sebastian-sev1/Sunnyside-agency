@@ -23,6 +23,10 @@ body{
     font-family: 'Barlow', sans-serif;
     font-size: 18px;
 }
+a{
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+}
 .container{
     padding: 0 1em;
     margin: 0 auto;
@@ -39,7 +43,7 @@ body{
 .header-page-top{
     width: 100%;
     height:77px;
-    position:fixed;
+    position:relative;
     padding-top:0.7em;
     top: 0;
     left: 0;
@@ -59,10 +63,10 @@ body{
     height: auto;
     background: var(--Whit);
     position: fixed;
-    top:105px;
+    top:100px;
     left: 50%;
     transform: translate(-50%);
-    padding: 2em 2em 2em 2em;
+    padding: 1.5em 2em 1.9em 2em;
     display: none;
 }
 .header-menu.active{
@@ -87,7 +91,7 @@ body{
     width: 100%;
     line-height: 50px;
     text-transform: capitalize;
-    font-size: 20px;
+    font-size: 18px;
     color: var(--Verydark-grayish-blue);
     text-decoration: none;
     display: flex;
@@ -134,5 +138,99 @@ body{
     display: block;
     font-family: var(--font-family2);
     font-weight: 900;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
+}
+.grid-section-top{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.grid-section-top .grid-content-item{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.grid-content-item .grid-content-img{
+    width: 100%;
+    min-height:300px;
+    background-image: url("../../images/mobile/image-transform.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.grid-content-img.img-1{
+    background-image: url("../../images/mobile/image-stand-out.jpg");
+}
+.grid-content-item .grid-content-text{
+    display: grid;
+    padding: 2.3em 1.2em;
+    text-align: center;
+    grid-gap:1em;
+}
+.grid-content-text .grid-title .title{
+    font-size: 1.8em;
+    display: block;
+    font-weight: 800;
+    font-family: var(--font-family2);
+    color: var(--Verydark-desaturated-blue);
+}
+.text-content-grid .text{
+    font-size: 18px;
+    color: var(--Darkgrayish-blue);
+    line-height: 27px;
+}
+.grid-content-item .btn-link .link{
+    text-transform: uppercase;
+    font-size: 16px;
+    color: var(--Verydark-desaturated-blue);
+    font-family: var(--font-family2);
+    font-weight: 900;
+    position: relative;
+    cursor: pointer;
+}
+.btn-link .link::after{
+    content: "";
+    position: absolute;
+    width:100%;
+    height: 3px;
+    left: 0;
+    bottom: -3px;
+    border-radius: 15px;
+    background-color: var(--yellow);
+}
+.grid-content-item{
+    position: relative;
+}
+.grid-content-item .card-body{
+    display: block;
+    text-align: center;
+    padding: 1em 1em;
+    position: absolute;
+    bottom: 1em;
+}
+.grid-content-item.cd-body-1{
+    width: 100%;
+    min-height: 520px;
+    background-image: url("../../images/mobile/image-graphic-design.jpg");
+    background-size: cover;
+}
+.grid-content-item.cd-body-2{
+    width: 100%;
+    min-height: 520px;
+    background-image: url("../../images/mobile/image-photography.jpg");
+    background-size: cover;
+}
+.text-content-card .title-card{
+    padding-top: 1.8em;
+    padding-bottom: 1em;
+}
+.title-card .title{
+    font-size: 1.5em;
+    color: var(--dark-desaturated-cyan);
+    font-family: var(--font-family2);
+    font-weight: 900;
+}
+.text-content-card .text-card{
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5em;
+    color: var(--dark-blue);
 }
